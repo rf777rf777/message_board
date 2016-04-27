@@ -1,15 +1,15 @@
 <p>
-  <strong>Commenter:</strong>
+  <strong>來自:</strong>
   <%= comment.commenter %>
 </p>
  
 <p>
-  <strong>Comment:</strong>
+  <strong>回應:</strong>
   <%= comment.body %>
 </p>
 
 <p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
+  <%= link_to '刪除留言', [comment.article, comment],
                method: :delete,
-               data: { confirm: 'Are you sure?' } %>
+               data: { confirm: '確定要刪除留言?' } %>
 </p>

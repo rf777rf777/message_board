@@ -1,11 +1,11 @@
 <h1>文章列表</h1>
  
- <%= link_to 'New article', new_article_path %>
+ <%= link_to '發表新留言', new_article_path %>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Text</th>
+    <th>標題</th>
+    <th>內容</th>
     <th colspan="2"></th>
   </tr>
  
@@ -13,11 +13,11 @@
     <tr>
       <td><%= article.title %></td>
       <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
+      <td><%= link_to '回應主題', article_path(article) %></td>
+      <td><%= link_to '編輯', edit_article_path(article) %></td>
+      <td><%= link_to '刪除', article_path(article),
               method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
+              data: { confirm: '你確定要刪除? 不要刪到別人的喔!' } %></td>
     </tr>
   <% end %>
 </table>
