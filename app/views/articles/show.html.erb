@@ -1,4 +1,16 @@
-<p>
+<h3>Theme:</h3> 
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= @article.title %> </h3>
+  </div>
+  <div class="panel-body">
+    <%= @article.text %>
+    <%= link_to 'edit', edit_article_path(@article) ,class: "btn btn-warning pull-right"%> 
+  </div>
+</div>
+
+
+<!--p>	
   <strong>主題:</strong>
   <%= @article.title %>
 </p>
@@ -6,13 +18,21 @@
 <p>
   <strong>內容:</strong>
   <%= @article.text %>
-</p>
+</p-->
  
-<h2>回應列表</h2>
+<h3>Respone</h3>
 <%= render @article.comments %>
  
-<h2>新增回應:</h2>
-<%= render 'comments/form' %>
+ <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= "Add Comment" %> </h3>
+  </div>
+  <div class="panel-body">
+    <%= render 'comments/form' %>
+    <%= link_to 'back', articles_path ,class: "btn btn-info pull-right" %>
+  </div>
+</div>
  
-<%= link_to '編輯', edit_article_path(@article) %> |
-<%= link_to '返回', articles_path %>
+
+
+

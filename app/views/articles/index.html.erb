@@ -1,23 +1,26 @@
-<h1>文章列表</h1>
+<h1>Topic List</h1>
  
- <%= link_to '發表新留言', new_article_path %>
+ <div>
+ <%= link_to 'Leave Message', new_article_path , class: "btn btn-primary btn-lg" %> <br><br>
+</div>
 
-<table>
-  <tr>
-    <th>標題</th>
-    <th>內容</th>
-    <th colspan="2"></th>
+<table class="table">
+  <tr class="active">
+    <th>Title</th>
+    <th>Content</th>
+    <th colspan="3"></th>
   </tr>
- 
+
+
   <% @articles.each do |article| %>
     <tr>
       <td><%= article.title %></td>
       <td><%= article.text %></td>
-      <td><%= link_to '回應主題', article_path(article) %></td>
-      <td><%= link_to '編輯', edit_article_path(article) %></td>
-      <td><%= link_to '刪除', article_path(article),
-              method: :delete,
-              data: { confirm: '你確定要刪除? 不要刪到別人的喔!' } %></td>
-    </tr>
+        <th><%= link_to "Response", article_path(article) ,class: "btn btn-success btn-block"%></th>
+        <th><%= link_to "Edit", edit_article_path(article) ,class: "btn btn-warning btn-block" %></th>
+        <th><%= link_to "Delete", article_path(article),
+                method: :delete,
+                data: { confirm: 'Are you sure?' } ,class: "btn btn-danger btn-block" %></th>
   <% end %>
 </table>
+</div>

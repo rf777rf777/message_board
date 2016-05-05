@@ -1,15 +1,27 @@
-<p>
-  <strong>來自:</strong>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= comment.commenter %></h3>
+  </div>
+  <div class="panel-body">
+      <%= comment.body %>
+        <p class="pull-right">
+  			<%= link_to 'Delete', [comment.article, comment],
+               method: :delete,
+               data: { confirm: '確定要刪除留言?' } , class: "btn btn-danger"%>
+		    </p>
+  </div>
+</div>
+
+
+<!--p>
+  <strong>From:</strong>
   <%= comment.commenter %>
 </p>
  
 <p>
-  <strong>回應:</strong>
+  <strong>Respone:</strong>
   <%= comment.body %>
-</p>
+</p-->
 
-<p>
-  <%= link_to '刪除留言', [comment.article, comment],
-               method: :delete,
-               data: { confirm: '確定要刪除留言?' } %>
-</p>
+
+

@@ -14,20 +14,19 @@
     </div>
   <% end %>
  
-  <p>
-    <strong>文章主題:</strong><br>
-    <!-- <%= f.label :title %><br> -->
-    <%= f.text_field :title %>
-  </p>
+ <div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Theme:<%= f.text_field :title %></h3>
+  </div>
+    <div class="panel-body">
+      <p>
+        <strong>Content:</strong><br>
+          <!-- <%= f.label :text %><br> -->
+        <%= f.text_area :text %>
+      </p>
  
-  <p>
-    <strong>內容:</strong><br>
-    <!-- <%= f.label :text %><br> -->
-    <%= f.text_area :text %>
-  </p>
- 
-  <p>
-    <%= f.submit %>
-  </p>
- 
+      <p>
+        <%= f.submit %>
+      </p>
+    </div>
 <% end %>

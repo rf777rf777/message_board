@@ -1,11 +1,11 @@
 <%= form_for([@article, @article.comments.build]) do |f| %>
   <p>
-    <strong>暱稱:</strong><br>
+    <strong>From:</strong><br>
     <!-- <%= f.label :commenter %><br> -->
     <%= f.text_field :commenter %>
   </p>
   <p>
-    <strong>回應內容:</strong><br>
+    <strong>Comment:</strong><br>
     <!-- <%= f.label :body %><br> -->
     <%= f.text_area :body %>
   </p>
