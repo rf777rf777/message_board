@@ -1,28 +1,9 @@
 == README
+這是我最初的Ruby on Rails作品，是一個簡單的留言版，參考Rails官方指南 (http://guides.rubyonrails.org/) 所建構，部署於Heroku，並完成了簡單的前端設計(使用Bootstrap)。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Ruby 與 Rails版本
+ Ruby : 2.2.0 Rails : 4.2.6
+* 開發平台
+ Win7...真的很多問題，已開始規劃買Mac
+* 測試網址 http://salty-taiga-48148.herokuapp.com/
+ 進入留言(Leave Message)即可
