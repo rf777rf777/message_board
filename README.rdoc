@@ -3,7 +3,6 @@
 
 * Ruby 與 Rails版本
  Ruby : 2.2.0 Rails : 4.2.6
-* 開發平台
- Win7...真的很多問題，已開始規劃買Mac
+
 * 測試網址 http://salty-taiga-48148.herokuapp.com/
  進入留言(Leave Message)即可
